@@ -56,6 +56,8 @@ public class PlayerController : MonoBehaviour
         playerAudio.Play(); // 오디오 플레이
         playerRigidbody.velocity = Vector2.zero;
         isDead = true;
+
+        GameManager.instance.OnPlayerDead();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
