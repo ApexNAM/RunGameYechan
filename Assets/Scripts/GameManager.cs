@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (isGameOver && Input.GetButtonDown("Jump"))
+        if (isGameOver && Input.GetMouseButtonDown(0))
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
